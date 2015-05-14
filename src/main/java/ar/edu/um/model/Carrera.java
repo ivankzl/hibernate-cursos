@@ -96,6 +96,16 @@ public class Carrera {
 	public void setClave(int clave) {
 		this.clave = clave;
 	}
+
+	@Override
+	public String toString() {
+		return "Carrera [Car_Fac_ID=" + Car_Fac_ID + ", Car_Pla_ID="
+				+ Car_Pla_ID + ", Car_ID=" + Car_ID + ", Car_Nombre="
+				+ Car_Nombre + ", Car_Iniciales=" + Car_Iniciales
+				+ ", Car_Titulo=" + Car_Titulo + ", Car_CheqUnica="
+				+ Car_CheqUnica + ", clave=" + clave + "]";
+	}
+	
 	
 	
 	

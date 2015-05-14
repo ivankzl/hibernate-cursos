@@ -8,5 +8,9 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "documento")
 public class Documento {
+	@Column(name = "Doc_ID", nullable = false)
+	private int Doc_ID;
+	@Column(name = "Doc_Nombre", nullable = false)
+	private String Doc_Nombre;
 
 }
