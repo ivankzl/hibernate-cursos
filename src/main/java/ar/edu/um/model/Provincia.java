@@ -1,5 +1,7 @@
 package ar.edu.um.model;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -7,7 +9,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "provincia")
-public class Provincia {
+public class Provincia implements Serializable{
 	
 	@Id
 	@Column(name = "Prv_Fac_ID", nullable = false)

@@ -1,9 +1,11 @@
 package ar.edu.um.model;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Id;
 
-public class Persona {
+public class Persona implements Serializable{
 
 	@Id
 	@Column(name = "Per_ID", nullable = false)

@@ -1,11 +1,12 @@
 package ar.edu.um.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Id;
 
-public class Plan {
+public class Plan implements Serializable{
 	
 	@Id
 	@Column(name = "Pla_Fac_ID", nullable = false)
