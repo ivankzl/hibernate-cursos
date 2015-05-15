@@ -26,6 +26,7 @@ public class Localidad implements Serializable{
 	@Column(name = "Loc_Nombre", nullable = false)
 	private String Loc_Nombre;
 	
+	@Id
 	@Column(name = "id", nullable = false)
 	private int id;
 

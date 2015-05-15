@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 
 import ar.edu.um.model.Lectivo;
 
+@Service ("lectivoDAO")
 public class LectivoDAO {
 	@Autowired
 	private SessionFactory sessionFactory;
