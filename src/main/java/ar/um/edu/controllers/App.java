@@ -3,8 +3,6 @@ package ar.um.edu.controllers;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import ar.edu.um.model.Curso;
-import ar.edu.um.service.CursosService;
 
 public class App {
 	public static void main(String[] args) {
