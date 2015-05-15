@@ -1,4 +1,4 @@
-package ar.um.edu.controllers;
+package ar.edu.um.controller;
 
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
