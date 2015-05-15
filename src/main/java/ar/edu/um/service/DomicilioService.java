@@ -5,10 +5,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import ar.edu.um.dao.DomicilioDAO;
-import ar.edu.um.model.Aluleg;
 import ar.edu.um.model.Domicilio;
-import ar.edu.um.model.Lectivo;
-import ar.edu.um.model.Localidad;
 
 @Service("domicilioService")
 public class DomicilioService implements IDomicilioService {
