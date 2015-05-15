@@ -13,4 +13,8 @@ public class PersonaDAO {
 	public void persistPersona(Persona persona) {
 		sessionFactory.getCurrentSession().persist(persona);
 	}
+	
+	public void findPersona() {
+	//	sessionFactory.getCurrentSession().get(clazz, id)
+	}
 }

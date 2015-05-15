@@ -17,5 +17,9 @@ public class PersonaService implements IPersonaService {
 	public void persistPersona (Persona persona) {
 		personaDAO.persistPersona (persona);
 	}
+
+	public Persona findPersona() {
+		return personaDAO.findPersona();
+	}
 	
 }
