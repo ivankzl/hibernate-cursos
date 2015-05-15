@@ -8,7 +8,7 @@ public class PlanDAO {
 	@Autowired
 	private SessionFactory sessionFactory;
 
-	public void persistCurso(Plan plan) {
+	public void persistPlan(Plan plan) {
 		sessionFactory.getCurrentSession().persist(plan);
 	}
 

@@ -10,7 +10,7 @@ public class DocumentoDAO {
 	@Autowired
 	private SessionFactory sessionFactory;
 
-	public void persistCurso(Documento documento) {
+	public void persistDocumento(Documento documento) {
 		sessionFactory.getCurrentSession().persist(documento);
 	}
 

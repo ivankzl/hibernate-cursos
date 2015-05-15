@@ -5,7 +5,7 @@ import ar.edu.um.model.Carrera;
 
 public interface ICarreraDAO {
 
-	void persistAluleg (Carrera carrera);
+	void persistCarrera (Carrera carrera);
 	
 }
 

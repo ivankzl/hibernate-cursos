@@ -9,7 +9,7 @@ public class LectivoDAO {
 	@Autowired
 	private SessionFactory sessionFactory;
 
-	public void persistCurso(Lectivo lectivo) {
+	public void persistLectivo(Lectivo lectivo) {
 		sessionFactory.getCurrentSession().persist(lectivo);
 	}
 }

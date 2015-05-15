@@ -9,7 +9,7 @@ public class LocalidadDAO {
 	@Autowired
 	private SessionFactory sessionFactory;
 
-	public void persistCurso(Localidad localidad) {
+	public void persistLocalidad(Localidad localidad) {
 		sessionFactory.getCurrentSession().persist(localidad);
 	}
 

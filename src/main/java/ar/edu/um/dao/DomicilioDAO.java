@@ -10,7 +10,7 @@ public class DomicilioDAO {
 	@Autowired
 	private SessionFactory sessionFactory;
 
-	public void persistCurso(Domicilio domicilio) {
+	public void persistDomicilio(Domicilio domicilio) {
 		sessionFactory.getCurrentSession().persist(domicilio);
 	}
 }

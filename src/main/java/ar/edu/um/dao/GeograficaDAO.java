@@ -11,7 +11,7 @@ public class GeograficaDAO {
 	@Autowired
 	private SessionFactory sessionFactory;
 
-	public void persistCurso(Geografica geografica) {
+	public void persistGeografica(Geografica geografica) {
 		sessionFactory.getCurrentSession().persist(geografica);
 	}
 }

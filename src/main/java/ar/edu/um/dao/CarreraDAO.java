@@ -11,7 +11,7 @@ public class CarreraDAO {
 	@Autowired
 	private SessionFactory sessionFactory;
 
-	public void persistCurso(Carrera carrera) {
+	public void persistCarrera(Carrera carrera) {
 		sessionFactory.getCurrentSession().persist(carrera);
 	}
 }

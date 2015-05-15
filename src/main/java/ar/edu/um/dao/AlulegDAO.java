@@ -11,7 +11,7 @@ public class AlulegDAO {
 	@Autowired
 	private SessionFactory sessionFactory;
 
-	public void persistCurso(Aluleg aluleg) {
+	public void persistAluleg(Aluleg aluleg) {
 		sessionFactory.getCurrentSession().persist(aluleg);
 	}
 

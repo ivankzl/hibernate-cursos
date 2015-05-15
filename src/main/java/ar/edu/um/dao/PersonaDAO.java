@@ -8,7 +8,7 @@ public class PersonaDAO {
 	@Autowired
 	private SessionFactory sessionFactory;
 
-	public void persistCurso(Persona persona) {
+	public void persistPersona(Persona persona) {
 		sessionFactory.getCurrentSession().persist(persona);
 	}
 }

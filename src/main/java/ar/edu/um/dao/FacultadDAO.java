@@ -10,7 +10,7 @@ public class FacultadDAO {
 	@Autowired
 	private SessionFactory sessionFactory;
 
-	public void persistCurso(Facultad facultad) {
+	public void persistFacultad(Facultad facultad) {
 		sessionFactory.getCurrentSession().persist(facultad);
 	}
 }
