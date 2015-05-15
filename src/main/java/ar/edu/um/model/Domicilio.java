@@ -63,12 +63,12 @@ public class Domicilio {
 		
 	}
 
-	public BigDecimal getDom_Per_Id() {
-		return Dom_Per_Id;
+	public BigDecimal getDom_Per_ID() {
+		return Dom_Per_ID;
 	}
 
-	public void setDom_Per_Id(BigDecimal dom_Per_Id) {
-		Dom_Per_Id = dom_Per_Id;
+	public void setDom_Per_ID(BigDecimal dom_Per_ID) {
+		Dom_Per_ID = dom_Per_ID;
 	}
 
 	public int getDom_Doc_ID() {
@@ -193,7 +193,7 @@ public class Domicilio {
 
 	@Override
 	public String toString() {
-		return "Domicilio [Dom_Per_Id=" + Dom_Per_Id + ", Dom_Doc_ID="
+		return "Domicilio [Dom_Per_ID=" + Dom_Per_ID + ", Dom_Doc_ID="
 				+ Dom_Doc_ID + ", Dom_Fecha=" + Dom_Fecha + ", Dom_Calle="
 				+ Dom_Calle + ", Dom_Puerta=" + Dom_Puerta + ", Dom_Piso="
 				+ Dom_Piso + ", Dom_Dpto=" + Dom_Dpto + ", Dom_Telefono="
