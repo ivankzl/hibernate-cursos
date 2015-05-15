@@ -17,9 +17,7 @@ public class App {
 		provincia.setPrv_ID(1);
 		provincia.setPrv_Nombre("Mendoza");
 		prvService.persistProvincia(provincia);
-//		CursosService emService = (CursosService) context.getBean("cursosService");
-//		Curso curso = emService.findCursoByID(1);
-//		System.out.println(curso);
+
 		context.close();
 	}
 

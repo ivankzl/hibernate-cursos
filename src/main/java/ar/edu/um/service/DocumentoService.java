@@ -5,9 +5,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import ar.edu.um.dao.DocumentoDAO;
-import ar.edu.um.model.Aluleg;
 import ar.edu.um.model.Documento;
-import ar.edu.um.model.Localidad;
 
 @Service("documentoService")
 public class DocumentoService implements IDocumentoService {

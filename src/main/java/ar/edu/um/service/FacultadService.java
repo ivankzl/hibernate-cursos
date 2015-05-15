@@ -5,9 +5,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import ar.edu.um.dao.FacultadDAO;
-import ar.edu.um.model.Aluleg;
 import ar.edu.um.model.Facultad;
-import ar.edu.um.model.Localidad;
 
 @Service("facultadService")
 public class FacultadService implements IFacultadService {

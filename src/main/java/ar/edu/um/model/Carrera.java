@@ -1,6 +1,5 @@
 package ar.edu.um.model;
 
-import java.math.BigDecimal;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,7 +10,7 @@ import javax.persistence.Table;
 @Table(name = "carrera")
 public class Carrera {
 
-	//@Id
+	@Id
 	@Column(name = "Car_Fac_ID", nullable = false)
 	private int Car_Fac_ID;
 	@Column(name = "Car_Pla_ID", nullable = false)

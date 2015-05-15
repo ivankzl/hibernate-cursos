@@ -1,12 +1,14 @@
 package ar.edu.um.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "geografica")
 public class Geografica {
 	
+	@Id
 	@Column(name = "Geo_ID", nullable = false)
 	private int Geo_ID;
 	

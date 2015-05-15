@@ -11,7 +11,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "aluleg")
 public class Aluleg {
-	//@Id
+	@Id
 	@Column(name = "ALe_Per_ID", nullable = false)
 	private BigDecimal ALe_Per_ID;
 	@Column(name = "ALe_Doc_ID", nullable = false)

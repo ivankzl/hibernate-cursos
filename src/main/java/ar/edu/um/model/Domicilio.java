@@ -5,12 +5,14 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "domicilio")
 public class Domicilio {
 	
+	@Id
 	@Column(name = "Dom_Per_ID", nullable = false)
 	private BigDecimal Dom_Per_ID;
 	
