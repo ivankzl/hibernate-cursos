@@ -14,7 +14,7 @@ public class PersonaDAO {
 		sessionFactory.getCurrentSession().persist(persona);
 	}
 	
-	public void findPersona() {
-	//	sessionFactory.getCurrentSession().get(clazz, id)
+	public Persona findPersonaByClave(String clave) {
+		return (Persona)sessionFactory.getCurrentSession().get(Persona.class, clave);
 	}
 }

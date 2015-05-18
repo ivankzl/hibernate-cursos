@@ -18,8 +18,8 @@ public class PersonaService implements IPersonaService {
 		personaDAO.persistPersona (persona);
 	}
 
-	public Persona findPersona() {
-		return personaDAO.findPersona();
+	public Persona findPersonaByClave(String clave) {
+		return (Persona)personaDAO.findPersonaByClave(clave);
 	}
 	
 }

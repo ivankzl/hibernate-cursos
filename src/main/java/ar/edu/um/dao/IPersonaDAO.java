@@ -4,5 +4,5 @@ import ar.edu.um.model.Persona;
 
 public interface IPersonaDAO {
 	void persistPersona (Persona persona);
-	Persona findPersona();
+	Persona findPersonaByClave(String clave);
 }

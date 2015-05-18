@@ -13,4 +13,7 @@ public class FacultadDAO {
 	public void persistFacultad(Facultad facultad) {
 		sessionFactory.getCurrentSession().persist(facultad);
 	}
+	public Facultad findCursoByFac_ID(int Fac_ID) {
+			return (Facultad)sessionFactory.getCurrentSession().get(Facultad.class, Fac_ID);
+	}
 }
