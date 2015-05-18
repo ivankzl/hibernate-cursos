@@ -1,11 +1,14 @@
 package ar.edu.um.controller;
 
+import java.util.List;
+
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import ar.edu.um.model.Persona;
 import ar.edu.um.model.Provincia;
+import ar.edu.um.service.IPersonaService;
 import ar.edu.um.service.IProvinciaService;
-import ar.edu.um.service.ProvinciaService;
 
 
 public class App {
@@ -13,12 +16,18 @@ public class App {
 		System.out.println("load context");
 		ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		IProvinciaService prvService = (IProvinciaService) context.getBean("provinciaService");
-		Provincia provincia = new Provincia();
+		IPersonaService perService = (IPersonaService) context.getBean("personaService");
+		List<Persona> list = perService.list();
+        
+        for(Persona p : list){
+            System.out.println("Persona List::"+p);
+        }
+/*		Provincia provincia = new Provincia();
 		provincia.setPrv_Fac_ID(1);
 		provincia.setPrv_ID(1);
 		provincia.setPrv_Nombre("Mendoza");
 		prvService.persistProvincia(provincia);
-
+*/
 		context.close();
 	}
 

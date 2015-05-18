@@ -1,4 +1,7 @@
 package ar.edu.um.dao;
+import java.util.List;
+
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,7 +17,11 @@ public class PersonaDAO {
 		sessionFactory.getCurrentSession().persist(persona);
 	}
 	
-	public void findPersona() {
-	//	sessionFactory.getCurrentSession().get(clazz, id)
-	}
+	@SuppressWarnings("unchecked")
+	public List<Persona> list() {
+		Session session = this.sessionFactory.openSession();
+        session.beginTransaction();
+        List<Persona> personList = (List<Persona>) session.createQuery("from Persona").list();
+        return personList;
+    }
 }

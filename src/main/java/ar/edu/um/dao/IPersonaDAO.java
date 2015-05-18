@@ -1,8 +1,10 @@
 package ar.edu.um.dao;
 
+import java.util.List;
+
 import ar.edu.um.model.Persona;
 
 public interface IPersonaDAO {
 	void persistPersona (Persona persona);
-	Persona findPersona();
+	public List<Persona> list();
 }
