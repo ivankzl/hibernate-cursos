@@ -23,8 +23,10 @@ public class Persona implements Serializable{
 	private String Per_Nombre;
 	@Column(name = "Per_Sexo", nullable = false)
 	private String Per_Sexo;
+	@Id
 	@Column(name = "clave", nullable = false)
-	private String clave;
+	private Integer clave;
+	
 	public Persona() {
 		
 	}
@@ -58,10 +60,10 @@ public class Persona implements Serializable{
 	public void setPer_Sexo(String per_Sexo) {
 		Per_Sexo = per_Sexo;
 	}
-	public String getClave() {
+	public int getClave() {
 		return clave;
 	}
-	public void setClave(String clave) {
+	public void setClave(int clave) {
 		this.clave = clave;
 	}
 	
