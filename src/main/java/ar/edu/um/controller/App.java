@@ -15,6 +15,7 @@ public class App {
 	public static void main(String[] args) {
 		System.out.println("load context");
 		ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		/*Ejemplo de insert
 		IProvinciaService prvService = (IProvinciaService) context.getBean("provinciaService");
 		IPersonaService perService = (IPersonaService) context.getBean("personaService");
 		List<Persona> list = perService.list();
@@ -27,7 +28,11 @@ public class App {
 		provincia.setPrv_ID(1);
 		provincia.setPrv_Nombre("Mendoza");
 		prvService.persistProvincia(provincia);
+<<<<<<< HEAD
 */
+=======
+		*/
+>>>>>>> 6b5dab62497abad4e78a40f51f97af7a2740f953
 		context.close();
 	}
 

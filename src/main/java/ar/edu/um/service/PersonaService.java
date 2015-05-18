@@ -20,8 +20,13 @@ public class PersonaService implements IPersonaService {
 		personaDAO.persistPersona (persona);
 	}
 
+<<<<<<< HEAD
 	public List<Persona> list() {
 		return personaDAO.list();
+=======
+	public Persona findPersonaByClave(String clave) {
+		return (Persona)personaDAO.findPersonaByClave(clave);
+>>>>>>> 6b5dab62497abad4e78a40f51f97af7a2740f953
 	}
 	
 }

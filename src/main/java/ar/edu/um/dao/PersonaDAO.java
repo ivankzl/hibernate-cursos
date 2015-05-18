@@ -17,6 +17,7 @@ public class PersonaDAO {
 		sessionFactory.getCurrentSession().persist(persona);
 	}
 	
+<<<<<<< HEAD
 	@SuppressWarnings("unchecked")
 	public List<Persona> list() {
 		Session session = this.sessionFactory.openSession();
@@ -24,4 +25,9 @@ public class PersonaDAO {
         List<Persona> personList = (List<Persona>) session.createQuery("from Persona").list();
         return personList;
     }
+=======
+	public Persona findPersonaByClave(String clave) {
+		return (Persona)sessionFactory.getCurrentSession().get(Persona.class, clave);
+	}
+>>>>>>> 6b5dab62497abad4e78a40f51f97af7a2740f953
 }

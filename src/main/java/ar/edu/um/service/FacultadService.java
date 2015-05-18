@@ -18,4 +18,9 @@ public class FacultadService implements IFacultadService {
 		facultadDAO.persistFacultad(facultad);
 	}
 	
+	@Transactional
+	public Facultad findFacultadByFac_ID(int Fac_ID){
+		return facultadDAO.findCursoByFac_ID(Fac_ID);
+	}
+	
 }
