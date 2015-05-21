@@ -1,4 +1,5 @@
 package ar.edu.um.model;
+import java.io.Serializable;
 import java.sql.Date;
 
 import javax.persistence.Column;
@@ -8,7 +9,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tramite")
-public class Tramite {
+public class Tramite implements Serializable{
 	
 	@Id
 	@Column(name = "tra_fac_id", nullable = false)
