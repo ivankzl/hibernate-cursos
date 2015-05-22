@@ -24,6 +24,8 @@
                 <value>ar.edu.um.model.Carrera</value>
                 <value>ar.edu.um.model.Documento</value>
                 <value>ar.edu.um.model.Domicilio</value>
+                <value>ar.edu.um.model.Estado</value>
+                <value>ar.edu.um.model.EstadoTipo</value>
                 <value>ar.edu.um.model.Facultad</value>
                 <value>ar.edu.um.model.Geografica</value>
                 <value>ar.edu.um.model.Lectivo</value>
@@ -31,6 +33,9 @@
                 <value>ar.edu.um.model.Persona</value>
                 <value>ar.edu.um.model.Plan</value>
                 <value>ar.edu.um.model.Provincia</value>
+                <value>ar.edu.um.model.Tracking</value>
+                <value>ar.edu.um.model.Tramite</value>
+                <value>ar.edu.um.model.Usuario</value>
 
             </list>
         </property>

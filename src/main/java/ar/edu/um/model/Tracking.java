@@ -1,4 +1,5 @@
 package ar.edu.um.model;
+import java.io.Serializable;
 import java.sql.Timestamp;
 
 import javax.persistence.Column;
@@ -8,7 +9,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tracking")
-public class Tracking {
+public class Tracking implements Serializable{
 	@Id
 	@Column(name = "tck_tra_id", nullable = false)
 	private int tck_tra_id;

@@ -34,7 +34,7 @@ public class Tramite implements Serializable{
 	@Column(name = "tra_inicio", nullable = false)
 	private Date tra_inicio;
 	
-	@Column(name = "tra_final", nullable = false)
+	@Column(name = "tra_final", nullable = true)
 	private Date tra_final;
 	
 	@Column(name = "tra_entregado", nullable = false)

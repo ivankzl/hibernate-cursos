@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import ar.edu.um.dao.TramiteDAO;
-import ar.edu.um.model.Persona;
 import ar.edu.um.model.Tramite;
 
 @Service("tramiteService")
