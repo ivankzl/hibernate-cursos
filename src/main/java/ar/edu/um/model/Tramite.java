@@ -118,6 +118,15 @@ public class Tramite implements Serializable{
 	public void setTra_id(int tra_id) {
 		this.tra_id = tra_id;
 	}
+
+	@Override
+	public String toString() {
+		return "Tramite [tra_fac_id=" + tra_fac_id + ", tra_per_id="
+				+ tra_per_id + ", tra_doc_id=" + tra_doc_id + ", tra_pla_id="
+				+ tra_pla_id + ", tra_car_id=" + tra_car_id + ", tra_inicio="
+				+ tra_inicio + ", tra_final=" + tra_final + ", tra_entregado="
+				+ tra_entregado + ", tra_id=" + tra_id + "]";
+	}
 	
 	
 	

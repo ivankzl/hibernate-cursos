@@ -8,8 +8,10 @@ import java.util.List;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import ar.edu.um.model.Tramite;
@@ -18,6 +20,7 @@ import ar.edu.um.service.ITramiteService;
 @RestController
 public class TramiteController {
 	
+	 //trae todos los tramites
 	 @RequestMapping(value= "/tramites",  method = RequestMethod.GET)
 	    public List<Tramite> get() {
 	    	ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
@@ -28,6 +31,7 @@ public class TramiteController {
 
 	    }
 	 
+	 //trae un tramite determinado
 	 @RequestMapping(value = "/tramites/{id}", method = RequestMethod.GET)
 	 public Tramite findTramite(@PathVariable("id") int id) {
 		 ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
@@ -37,6 +41,19 @@ public class TramiteController {
 	     return tramite;
 
 	 }
+	 //guardar un tramite nuevo
+	 @RequestMapping(value="/tramites", method=RequestMethod.POST)
+	 @ResponseBody
+	  public String saveTramite(@RequestBody Tramite tramite) {
+		 ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		 ITramiteService traService = (ITramiteService) context.getBean("tramiteService");
+		 traService.persistTramite(tramite);
+	     
+	
+	     return "Saved tramite: " + tramite.toString();
+	
+	     }
+
 	 /*
 	 //TERMINAR POST TRAMITE. PROBLEMA CON DATE
 	 @RequestMapping(value = "/tramites", method = RequestMethod.POST)
