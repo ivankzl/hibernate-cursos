@@ -23,6 +23,11 @@ public class TramiteService implements ITramiteService {
 	public List<Tramite> list() {
 		return tramiteDAO.list();
 	}
+	
+	@Transactional
+	public Tramite getTramite(int id) {
+		return tramiteDAO.getTramite(id);
+	}
 
 
 }

@@ -6,5 +6,6 @@ import ar.edu.um.model.Tramite;
 
 public interface ITramiteDAO {
 	void persistTramite (Tramite tramite);
-	public List<Tramite> list();
+	List<Tramite> list();
+	Tramite getTramite(int id);
 }

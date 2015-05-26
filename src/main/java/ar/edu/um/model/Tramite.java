@@ -13,7 +13,7 @@ public class Tramite implements Serializable{
 	
 	@Id
 	@Column(name = "tra_fac_id", nullable = false)
-	private int tck_tra_id;
+	private int tra_fac_id;
 	
 	@Id
 	@Column(name = "tra_per_id", nullable = false)
@@ -47,12 +47,12 @@ public class Tramite implements Serializable{
 		
 	}
 
-	public int getTck_tra_id() {
-		return tck_tra_id;
+	public int getTra_fac_id() {
+		return tra_fac_id;
 	}
 
-	public void setTck_tra_id(int tck_tra_id) {
-		this.tck_tra_id = tck_tra_id;
+	public void setTra_fac_id(int tra_fac_id) {
+		this.tra_fac_id = tra_fac_id;
 	}
 
 	public int getTra_per_id() {
