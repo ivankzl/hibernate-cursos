@@ -52,30 +52,9 @@ public class TramiteController {
 	
 	     return "Saved tramite: " + tramite.toString();
 	
-	     }
+	  }
+	 /*Probar desde la consola rest. por ej: {"tra_fac_id":3,"tra_per_id":8,"tra_doc_id":1,"tra_pla_id":3,"tra_car_id":2,"tra_inicio":"2015-05-05","tra_final":"2015-08-05","tra_entregado":0,"tra_id":3}]*/
 
-	 /*
-	 //TERMINAR POST TRAMITE. PROBLEMA CON DATE
-	 @RequestMapping(value = "/tramites", method = RequestMethod.POST)
-	    public List<Tramite> post() {
-	    	ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-	    	ITramiteService traService = (ITramiteService) context.getBean("tramiteService");
-	    	DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
-	    	String date = dateFormat.format(date);
-	    	
-	    	
-	    	Tramite tramite = new Tramite();
-	    	tramite.setTra_fac_id(2);
-	    	tramite.setTra_per_id(8);
-	    	tramite.setTra_doc_id(1);
-	    	tramite.setTra_pla_id(7);
-	    	tramite.setTra_car_id(2);
-	    	tramite.setTra_inicio(date);
-	    	
-			return list;
-
-	    }
-	    */
-	    
+	
 
 }
