@@ -22,6 +22,7 @@ public class TrackingController {
 		    ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		    ITrackingService trackingService = (ITrackingService) context.getBean("trackingService");
 		    List<Tracking> list = trackingService.list();
+		    System.out.println("");
 		    	
 		    return list;
 
